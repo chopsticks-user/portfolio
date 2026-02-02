@@ -4,6 +4,7 @@ title: "Qwik Progressive Enhancement for Forms"
 excerpt: "Building forms that work without JavaScript using routeAction$ and enhancing them with client-side validation."
 coverGradient: "linear-gradient(135deg, hsl(108, 60%, 21%) 0%, hsl(168, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-14"
 tags: ["Qwik"]
 published: true

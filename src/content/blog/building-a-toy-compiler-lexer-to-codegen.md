@@ -4,6 +4,7 @@ title: "Building a Toy Compiler: Lexer to Codegen"
 excerpt: "A walkthrough of implementing a complete compiler pipeline for a small expression language, from tokenization to x86 output."
 coverGradient: "linear-gradient(135deg, hsl(80, 70%, 15%) 0%, hsl(140, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-30"
 tags: ["Compilers"]
 published: true

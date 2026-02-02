@@ -4,6 +4,7 @@ title: "Compiler Optimization: Constant Folding and Propagation"
 excerpt: "How compilers evaluate expressions at compile time and propagate known values through the program to eliminate runtime work."
 coverGradient: "linear-gradient(135deg, hsl(27, 50%, 21%) 0%, hsl(87, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-16"
 tags: ["Compilers"]
 published: true

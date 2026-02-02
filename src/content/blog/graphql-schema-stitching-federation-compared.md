@@ -4,6 +4,7 @@ title: "GraphQL Schema Stitching vs Federation"
 excerpt: "A practical comparison of schema composition approaches for microservice architectures using GraphQL."
 coverGradient: "linear-gradient(135deg, hsl(320, 70%, 21%) 0%, hsl(20, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-15"
 tags: ["GraphQL"]
 published: true

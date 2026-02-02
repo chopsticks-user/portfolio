@@ -4,6 +4,7 @@ title: "Compiler Loop Optimization Techniques"
 excerpt: "How compilers transform loops with unrolling, vectorization, invariant code motion, and strength reduction."
 coverGradient: "linear-gradient(135deg, hsl(268, 50%, 27%) 0%, hsl(328, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-01"
 tags: ["Compilers"]
 published: true

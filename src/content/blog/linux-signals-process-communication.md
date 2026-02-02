@@ -4,8 +4,9 @@ title: "Linux Signals and Process Communication"
 excerpt: "How signals work as an inter-process communication mechanism, from delivery semantics to signal-safe function constraints."
 coverGradient: "linear-gradient(135deg, hsl(182, 50%, 18%) 0%, hsl(242, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-15"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

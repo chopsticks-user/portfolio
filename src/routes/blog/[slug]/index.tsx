@@ -45,7 +45,15 @@ export default component$(() => {
         </div>
         <h1 class={styles.title}>{post.value.title}</h1>
         <div class={styles.meta}>
-          by {post.value.author} ·{" "}
+          by{" "}
+          <a
+            href={post.value.authorLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {post.value.author}
+          </a>{" "}
+          ·{" "}
           {dateFormatter.format(new Date(post.value.date))}
         </div>
       </header>

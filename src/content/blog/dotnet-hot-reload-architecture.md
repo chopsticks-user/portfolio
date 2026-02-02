@@ -4,6 +4,7 @@ title: ".NET Hot Reload Architecture"
 excerpt: "Understanding how .NET hot reload modifies running applications by patching IL metadata and method bodies at runtime."
 coverGradient: "linear-gradient(135deg, hsl(69, 50%, 15%) 0%, hsl(129, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-10"
 tags: [".NET"]
 published: true

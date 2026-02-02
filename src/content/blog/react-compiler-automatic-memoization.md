@@ -4,6 +4,7 @@ title: "React Compiler and Automatic Memoization"
 excerpt: "How the React Compiler eliminates manual useMemo and useCallback by analyzing component dependencies at build time."
 coverGradient: "linear-gradient(135deg, hsl(267, 50%, 27%) 0%, hsl(327, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-06"
 tags: ["React", "Compilers"]
 published: true

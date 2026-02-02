@@ -4,8 +4,9 @@ title: "Linux Networking Stack: A Packet's Journey"
 excerpt: "Tracing a network packet from NIC hardware interrupt through the kernel networking stack to the application socket."
 coverGradient: "linear-gradient(135deg, hsl(295, 70%, 18%) 0%, hsl(355, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-01"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

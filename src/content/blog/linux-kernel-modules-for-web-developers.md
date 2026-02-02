@@ -4,8 +4,9 @@ title: "Linux Kernel Modules for Web Developers"
 excerpt: "You don't need to be a kernel hacker to understand how Linux underpins the systems you deploy to. This guide breaks down loadable kernel modules, /proc, and sysfs through the lens of someone who usually writes TypeScript."
 coverGradient: "linear-gradient(135deg, #0f1a0f 0%, #1a3a1a 50%, #0f1a0f 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-12"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

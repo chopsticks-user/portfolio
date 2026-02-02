@@ -4,6 +4,7 @@ title: "Compiler Type Inference: Hindley-Milner"
 excerpt: "Understanding Algorithm W and how compilers infer types without explicit annotations in ML-family languages."
 coverGradient: "linear-gradient(135deg, hsl(228, 70%, 21%) 0%, hsl(288, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-12"
 tags: ["Compilers"]
 published: true

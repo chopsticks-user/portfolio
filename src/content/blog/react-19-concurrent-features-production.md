@@ -4,6 +4,7 @@ title: "React 19 Concurrent Features in Production"
 excerpt: "Practical patterns for useTransition, useDeferredValue, and Suspense boundaries in large-scale React applications."
 coverGradient: "linear-gradient(135deg, hsl(200, 50%, 15%) 0%, hsl(260, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-28"
 tags: ["React", "Performance"]
 published: true

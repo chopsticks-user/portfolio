@@ -4,8 +4,9 @@ title: "Linux Cgroups Resource Management"
 excerpt: "Controlling CPU, memory, and I/O allocation with cgroups v2 for containerized and bare-metal workloads."
 coverGradient: "linear-gradient(135deg, hsl(34, 70%, 15%) 0%, hsl(94, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-27"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

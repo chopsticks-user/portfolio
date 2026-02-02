@@ -4,6 +4,7 @@ title: "React Server Components: A Compiler-Level Deep Dive"
 excerpt: "RSCs blur the line between server and client in ways that require understanding the compiler pipeline. This post walks through the transformation stages, from JSX to serialized component trees, and what it means for bundle boundaries."
 coverGradient: "linear-gradient(135deg, #0a1628 0%, #1e3a5f 50%, #0a1628 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-20"
 tags: ["React", "Next.js", "Compilers"]
 published: true

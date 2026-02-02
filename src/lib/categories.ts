@@ -1,11 +1,13 @@
 export const CATEGORIES = {
   Web: ["Qwik", "React", "Next.js", "GraphQL", ".NET", "Spring", "Performance"],
-  System: ["Linux", "System"],
+  Linux: ["Linux"],
   Compilers: ["Compilers"],
+  Languages: ["C++", "TypeScript"],
+  DevOps: ["DevOps"],
 } as const;
 
 export type Category = keyof typeof CATEGORIES | "All";
-export const CATEGORY_LIST: Category[] = ["All", "Web", "System", "Compilers"];
+export const CATEGORY_LIST: Category[] = ["All", "Web", "Linux", "Compilers", "Languages", "DevOps"];
 
 export function postMatchesCategory(
   tags: string[],

@@ -4,6 +4,7 @@ title: "React Concurrent Rendering Patterns"
 excerpt: "Leveraging time slicing, priority-based updates, and the concurrent features API for responsive UIs."
 coverGradient: "linear-gradient(135deg, hsl(229, 70%, 21%) 0%, hsl(289, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-15"
 tags: ["React", "Performance"]
 published: true

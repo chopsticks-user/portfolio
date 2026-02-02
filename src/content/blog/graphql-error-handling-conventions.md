@@ -4,6 +4,7 @@ title: "GraphQL Error Handling Conventions"
 excerpt: "Designing error responses with typed error unions, error codes, and partial success patterns for robust GraphQL APIs."
 coverGradient: "linear-gradient(135deg, hsl(282, 60%, 15%) 0%, hsl(342, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-20"
 tags: ["GraphQL"]
 published: true

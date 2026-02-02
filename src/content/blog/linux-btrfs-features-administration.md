@@ -4,8 +4,9 @@ title: "Linux Btrfs Features and Administration"
 excerpt: "Using Btrfs snapshots, subvolumes, compression, and RAID capabilities for flexible storage management."
 coverGradient: "linear-gradient(135deg, hsl(289, 50%, 24%) 0%, hsl(349, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-25"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

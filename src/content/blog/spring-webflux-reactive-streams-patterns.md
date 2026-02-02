@@ -4,6 +4,7 @@ title: "Spring WebFlux Reactive Streams Patterns"
 excerpt: "Implementing non-blocking APIs with Project Reactor's Mono and Flux in Spring WebFlux applications."
 coverGradient: "linear-gradient(135deg, hsl(208, 70%, 24%) 0%, hsl(268, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-08"
 tags: ["Spring", "Performance"]
 published: true

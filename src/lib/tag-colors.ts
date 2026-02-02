@@ -7,7 +7,9 @@ const TAG_COLORS: Record<string, string> = {
   Spring: "var(--tag-color-spring)",
   Performance: "var(--tag-color-performance)",
   Linux: "var(--tag-color-linux)",
-  System: "var(--tag-color-systems)",
+  "C++": "var(--tag-color-cpp)",
+  TypeScript: "var(--tag-color-typescript)",
+  DevOps: "var(--tag-color-devops)",
   Compilers: "var(--tag-color-compilers)",
 };
 

@@ -4,6 +4,7 @@ title: "Qwik Signals and Fine-Grained Reactivity"
 excerpt: "Understanding how Qwik's signal system tracks dependencies and updates the DOM with surgical precision."
 coverGradient: "linear-gradient(135deg, hsl(334, 50%, 24%) 0%, hsl(34, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-08"
 tags: ["Qwik", "Performance"]
 published: true

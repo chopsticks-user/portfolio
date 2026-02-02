@@ -4,8 +4,9 @@ title: "Linux Filesystem Internals: The VFS Layer"
 excerpt: "How the Virtual File System abstraction enables Linux to support dozens of filesystem types through a single interface."
 coverGradient: "linear-gradient(135deg, hsl(201, 50%, 15%) 0%, hsl(261, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-25"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

@@ -4,6 +4,7 @@ title: "React Accessibility Component Patterns"
 excerpt: "Building accessible modals, dropdowns, and tab panels with ARIA attributes, focus management, and keyboard navigation."
 coverGradient: "linear-gradient(135deg, hsl(249, 70%, 18%) 0%, hsl(309, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-08"
 tags: ["React"]
 published: true

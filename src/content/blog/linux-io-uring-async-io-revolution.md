@@ -4,8 +4,9 @@ title: "Linux io_uring: Async I/O Revolution"
 excerpt: "How io_uring provides truly asynchronous I/O in Linux with minimal syscall overhead via shared ring buffers."
 coverGradient: "linear-gradient(135deg, hsl(281, 60%, 15%) 0%, hsl(341, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-26"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

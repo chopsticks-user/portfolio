@@ -4,6 +4,7 @@ title: "Compiler Dead Code Elimination Techniques"
 excerpt: "How compilers identify and remove unreachable code, unused variables, and side-effect-free computations."
 coverGradient: "linear-gradient(135deg, hsl(161, 50%, 21%) 0%, hsl(221, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-14"
 tags: ["Compilers"]
 published: true

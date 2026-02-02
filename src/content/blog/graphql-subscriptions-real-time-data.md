@@ -4,6 +4,7 @@ title: "GraphQL Subscriptions for Real-Time Data"
 excerpt: "Implementing WebSocket-based GraphQL subscriptions with proper connection lifecycle management and scaling strategies."
 coverGradient: "linear-gradient(135deg, hsl(221, 50%, 27%) 0%, hsl(281, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-01"
 tags: ["GraphQL"]
 published: true

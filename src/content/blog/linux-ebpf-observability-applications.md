@@ -4,8 +4,9 @@ title: "Linux eBPF for Observability Applications"
 excerpt: "Using eBPF programs to instrument kernel and application behavior without modifying source code or restarting processes."
 coverGradient: "linear-gradient(135deg, hsl(187, 70%, 27%) 0%, hsl(247, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-04"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

@@ -4,8 +4,9 @@ title: "Systemd Service Management Deep Dive"
 excerpt: "Writing robust systemd unit files with proper dependency ordering, resource limits, and failure recovery."
 coverGradient: "linear-gradient(135deg, hsl(327, 60%, 15%) 0%, hsl(27, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-28"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

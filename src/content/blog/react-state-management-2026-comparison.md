@@ -4,6 +4,7 @@ title: "React State Management in 2026"
 excerpt: "Comparing Zustand, Jotai, Redux Toolkit, and React's built-in state for different application scales."
 coverGradient: "linear-gradient(135deg, hsl(41, 60%, 24%) 0%, hsl(101, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-08"
 tags: ["React"]
 published: true

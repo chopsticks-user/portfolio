@@ -4,6 +4,7 @@ title: "Next.js Middleware and Edge Runtime Patterns"
 excerpt: "Using middleware for auth checks, geolocation routing, and A/B testing at the edge with minimal latency."
 coverGradient: "linear-gradient(135deg, hsl(341, 70%, 18%) 0%, hsl(41, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-20"
 tags: ["Next.js"]
 published: true

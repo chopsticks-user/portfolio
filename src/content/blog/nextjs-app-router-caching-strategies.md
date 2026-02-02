@@ -4,6 +4,7 @@ title: "Next.js App Router Caching Strategies"
 excerpt: "Navigating the four layers of caching in the App Router and knowing when to opt out of each one."
 coverGradient: "linear-gradient(135deg, hsl(260, 60%, 18%) 0%, hsl(320, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-22"
 tags: ["Next.js", "Performance"]
 published: true

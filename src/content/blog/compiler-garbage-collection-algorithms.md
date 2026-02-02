@@ -4,8 +4,9 @@ title: "Compiler and Runtime Garbage Collection Algorithms"
 excerpt: "Comparing mark-sweep, copying, generational, and concurrent garbage collection strategies in managed runtimes."
 coverGradient: "linear-gradient(135deg, hsl(302, 60%, 27%) 0%, hsl(2, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-14"
-tags: ["Compilers", "System"]
+tags: ["Compilers"]
 published: true
 ---
 

@@ -4,6 +4,7 @@ title: ".NET gRPC High-Performance Services"
 excerpt: "Building and optimizing gRPC services in .NET with Protobuf serialization, streaming, and connection multiplexing."
 coverGradient: "linear-gradient(135deg, hsl(175, 60%, 24%) 0%, hsl(235, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-01"
 tags: [".NET", "Performance"]
 published: true

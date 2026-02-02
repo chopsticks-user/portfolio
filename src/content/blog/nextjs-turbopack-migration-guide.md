@@ -4,6 +4,7 @@ title: "Next.js Turbopack Migration Guide"
 excerpt: "Migrating from Webpack to Turbopack in Next.js for faster development builds and HMR."
 coverGradient: "linear-gradient(135deg, hsl(189, 70%, 27%) 0%, hsl(249, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-22"
 tags: ["Next.js"]
 published: true

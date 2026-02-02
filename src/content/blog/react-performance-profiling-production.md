@@ -4,6 +4,7 @@ title: "React Performance Profiling in Production"
 excerpt: "Using React DevTools Profiler, Web Vitals, and custom instrumentation to identify rendering bottlenecks."
 coverGradient: "linear-gradient(135deg, hsl(235, 60%, 15%) 0%, hsl(295, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-18"
 tags: ["React", "Performance"]
 published: true

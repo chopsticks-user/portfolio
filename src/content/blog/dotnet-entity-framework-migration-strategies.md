@@ -4,6 +4,7 @@ title: ".NET Entity Framework Migration Strategies"
 excerpt: "Managing database schema evolution with EF Core migrations in team environments and production deployments."
 coverGradient: "linear-gradient(135deg, hsl(348, 60%, 27%) 0%, hsl(48, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-01"
 tags: [".NET"]
 published: true

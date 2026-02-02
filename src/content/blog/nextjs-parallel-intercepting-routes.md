@@ -4,6 +4,7 @@ title: "Next.js Parallel and Intercepting Routes"
 excerpt: "Building modal patterns, split views, and conditional layouts with parallel routes and route interception."
 coverGradient: "linear-gradient(135deg, hsl(261, 60%, 18%) 0%, hsl(321, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-18"
 tags: ["Next.js", "React"]
 published: true

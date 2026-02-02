@@ -4,6 +4,7 @@ title: "Spring Boot Virtual Threads Guide"
 excerpt: "Adopting Project Loom virtual threads in Spring Boot applications for high-concurrency workloads."
 coverGradient: "linear-gradient(135deg, hsl(240, 60%, 21%) 0%, hsl(300, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-18"
 tags: ["Spring"]
 published: true

@@ -44,7 +44,9 @@
   --tag-color-spring: #6db33f;
   --tag-color-performance: #f59e0b;
   --tag-color-linux: #fcc624;
-  --tag-color-systems: #f87171;
+  --tag-color-cpp: #5c9fd4;
+  --tag-color-typescript: #3178c6;
+  --tag-color-devops: #e8854a;
   --tag-color-compilers: #2dd4bf;
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;

@@ -4,6 +4,7 @@ title: "Compiler Peephole Optimization Patterns"
 excerpt: "How compilers apply local rewrite rules to instruction sequences for smaller, faster machine code."
 coverGradient: "linear-gradient(135deg, hsl(129, 60%, 18%) 0%, hsl(189, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-20"
 tags: ["Compilers"]
 published: true

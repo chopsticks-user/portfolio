@@ -4,6 +4,7 @@ title: ".NET Minimal APIs Performance Tuning"
 excerpt: "Squeezing maximum throughput from ASP.NET Core minimal APIs with source generators and native AOT."
 coverGradient: "linear-gradient(135deg, hsl(140, 50%, 24%) 0%, hsl(200, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-08"
 tags: [".NET", "Performance"]
 published: true

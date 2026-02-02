@@ -4,6 +4,7 @@ title: "Compiler Register Allocation via Graph Coloring"
 excerpt: "How compilers map an unbounded number of variables to a finite set of CPU registers using graph coloring algorithms."
 coverGradient: "linear-gradient(135deg, hsl(274, 70%, 21%) 0%, hsl(334, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-15"
 tags: ["Compilers"]
 published: true

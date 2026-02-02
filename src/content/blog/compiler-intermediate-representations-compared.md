@@ -4,6 +4,7 @@ title: "Compiler Intermediate Representations Compared"
 excerpt: "Comparing SSA, CPS, A-Normal Form, and sea-of-nodes as intermediate representations in modern compilers."
 coverGradient: "linear-gradient(135deg, hsl(194, 60%, 21%) 0%, hsl(254, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-14"
 tags: ["Compilers"]
 published: true

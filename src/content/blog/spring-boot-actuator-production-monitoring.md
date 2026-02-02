@@ -4,6 +4,7 @@ title: "Spring Boot Actuator Production Monitoring"
 excerpt: "Configuring health checks, metrics endpoints, and Micrometer integration for production observability."
 coverGradient: "linear-gradient(135deg, hsl(242, 50%, 24%) 0%, hsl(302, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-15"
 tags: ["Spring"]
 published: true

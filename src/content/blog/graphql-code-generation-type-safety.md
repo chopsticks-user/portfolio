@@ -4,6 +4,7 @@ title: "GraphQL Code Generation for Type Safety"
 excerpt: "Using GraphQL Code Generator to produce typed hooks, resolvers, and SDK from your schema and operations."
 coverGradient: "linear-gradient(135deg, hsl(215, 60%, 18%) 0%, hsl(275, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-15"
 tags: ["GraphQL", "React"]
 published: true

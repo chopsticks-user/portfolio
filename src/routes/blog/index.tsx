@@ -95,7 +95,7 @@ export default component$(() => {
 
   return (
     <div class={styles.page}>
-      <FeaturedCarousel posts={posts.value.slice(0, 5)} />
+      <FeaturedCarousel posts={posts.value.slice(0, 6)} />
       <FilterBar
         activeCategory={activeCategory}
         sortOrder={sortOrder}

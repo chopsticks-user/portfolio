@@ -4,6 +4,7 @@ title: "Next.js Server Actions Form Patterns"
 excerpt: "Building type-safe, progressively enhanced forms with Server Actions, useFormState, and Zod validation."
 coverGradient: "linear-gradient(135deg, hsl(147, 70%, 18%) 0%, hsl(207, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-22"
 tags: ["Next.js", "React"]
 published: true

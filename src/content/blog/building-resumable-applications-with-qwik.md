@@ -4,6 +4,7 @@ title: "Building Resumable Applications with Qwik"
 excerpt: "Hydration has been the default mental model for modern frameworks, but Qwik flips the script entirely. Instead of replaying work the server already did, resumability picks up exactly where SSR left off — zero JavaScript upfront, instant interactivity."
 coverGradient: "linear-gradient(135deg, #1a1040 0%, #2d1b69 50%, #1a1040 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-28"
 tags: ["Qwik", "Performance"]
 published: true

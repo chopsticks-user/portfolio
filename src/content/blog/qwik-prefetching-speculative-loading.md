@@ -4,6 +4,7 @@ title: "Qwik Prefetching and Speculative Loading"
 excerpt: "Configuring Qwik's service worker prefetching to preload bundles based on user interaction patterns."
 coverGradient: "linear-gradient(135deg, hsl(115, 50%, 15%) 0%, hsl(175, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-25"
 tags: ["Qwik", "Performance"]
 published: true

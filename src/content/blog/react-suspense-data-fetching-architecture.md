@@ -4,6 +4,7 @@ title: "React Suspense Data Fetching Architecture"
 excerpt: "Designing data fetching layers that work with Suspense boundaries for streaming SSR and parallel data loading."
 coverGradient: "linear-gradient(135deg, hsl(87, 60%, 24%) 0%, hsl(147, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-10"
 tags: ["React", "Performance"]
 published: true

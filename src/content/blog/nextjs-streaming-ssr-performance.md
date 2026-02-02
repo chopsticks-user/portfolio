@@ -4,6 +4,7 @@ title: "Next.js Streaming SSR Performance"
 excerpt: "Implementing streaming server-side rendering with React Suspense for faster Time to First Byte and progressive page loads."
 coverGradient: "linear-gradient(135deg, hsl(62, 60%, 21%) 0%, hsl(122, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-18"
 tags: ["Next.js", "React", "Performance"]
 published: true

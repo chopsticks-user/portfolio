@@ -4,6 +4,7 @@ title: "React Testing Library Advanced Patterns"
 excerpt: "Testing complex interactions, async flows, and custom hooks with patterns that match how users actually use your app."
 coverGradient: "linear-gradient(135deg, hsl(288, 50%, 24%) 0%, hsl(348, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-05"
 tags: ["React"]
 published: true

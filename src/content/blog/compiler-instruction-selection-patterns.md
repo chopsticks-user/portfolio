@@ -4,6 +4,7 @@ title: "Compiler Instruction Selection Patterns"
 excerpt: "How compilers translate IR operations into target machine instructions using tree pattern matching and tiling."
 coverGradient: "linear-gradient(135deg, hsl(222, 50%, 27%) 0%, hsl(282, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-05"
 tags: ["Compilers"]
 published: true

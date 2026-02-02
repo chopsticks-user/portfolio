@@ -4,6 +4,7 @@ title: ".NET Async/Await and Task Parallel Patterns"
 excerpt: "Mastering async/await, Task combinators, and avoiding common pitfalls like sync-over-async and ConfigureAwait issues."
 coverGradient: "linear-gradient(135deg, hsl(122, 70%, 24%) 0%, hsl(182, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-07-08"
 tags: [".NET"]
 published: true

@@ -4,6 +4,7 @@ title: "Qwik City Data Loading Patterns"
 excerpt: "Comparing routeLoader$, server$, and routeAction$ for different data fetching scenarios in Qwik City applications."
 coverGradient: "linear-gradient(135deg, hsl(180, 50%, 18%) 0%, hsl(240, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-24"
 tags: ["Qwik"]
 published: true

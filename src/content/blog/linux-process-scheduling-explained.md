@@ -4,8 +4,9 @@ title: "Linux Process Scheduling Explained"
 excerpt: "Understanding the Completely Fair Scheduler, nice values, and real-time scheduling policies in the Linux kernel."
 coverGradient: "linear-gradient(135deg, hsl(20, 60%, 27%) 0%, hsl(80, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-03"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

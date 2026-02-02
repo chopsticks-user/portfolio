@@ -4,6 +4,7 @@ title: "Spring Security OAuth2 Resource Server"
 excerpt: "Configuring Spring Boot as an OAuth2 resource server with JWT validation, scope-based authorization, and token introspection."
 coverGradient: "linear-gradient(135deg, hsl(101, 70%, 27%) 0%, hsl(161, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-08-02"
 tags: ["Spring"]
 published: true

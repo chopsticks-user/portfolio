@@ -4,6 +4,7 @@ export interface BlogPost {
   excerpt: string;
   coverGradient: string;
   author: string;
+  authorLink: string;
   date: string;
   tags: string[];
 }

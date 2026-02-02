@@ -4,6 +4,7 @@ title: ".NET Source Generators Practical Guide"
 excerpt: "Building custom Roslyn source generators to eliminate boilerplate and enforce patterns at compile time."
 coverGradient: "linear-gradient(135deg, hsl(214, 60%, 18%) 0%, hsl(274, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-22"
 tags: [".NET"]
 published: true

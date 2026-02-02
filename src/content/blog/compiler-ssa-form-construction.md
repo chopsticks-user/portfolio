@@ -4,6 +4,7 @@ title: "Compiler SSA Form Construction"
 excerpt: "Transforming code into Static Single Assignment form and placing phi functions at dominance frontiers."
 coverGradient: "linear-gradient(135deg, hsl(55, 70%, 27%) 0%, hsl(115, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-28"
 tags: ["Compilers"]
 published: true

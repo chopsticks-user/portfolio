@@ -4,6 +4,7 @@ title: "GraphQL DataLoader and N+1 Solutions"
 excerpt: "Implementing batched data loading to eliminate the N+1 query problem inherent in naive GraphQL resolvers."
 coverGradient: "linear-gradient(135deg, hsl(247, 50%, 15%) 0%, hsl(307, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-28"
 tags: ["GraphQL", "Performance"]
 published: true

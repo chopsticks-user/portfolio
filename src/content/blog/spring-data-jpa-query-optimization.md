@@ -4,6 +4,7 @@ title: "Spring Data JPA Query Optimization"
 excerpt: "Identifying and fixing common JPA performance problems: eager loading, cartesian products, and projection strategies."
 coverGradient: "linear-gradient(135deg, hsl(154, 60%, 27%) 0%, hsl(214, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-02"
 tags: ["Spring", "Performance"]
 published: true

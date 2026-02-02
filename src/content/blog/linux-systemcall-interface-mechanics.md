@@ -4,8 +4,9 @@ title: "Linux System Call Interface Mechanics"
 excerpt: "How user-space programs transition to kernel mode through the syscall instruction and the kernel's dispatch mechanism."
 coverGradient: "linear-gradient(135deg, hsl(309, 50%, 21%) 0%, hsl(9, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-10"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

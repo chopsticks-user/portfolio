@@ -52,6 +52,16 @@
   color: var(--color-text-secondary);
 }
 
+.meta a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.meta a:hover {
+  color: var(--color-accent);
+}
+
 .content {
   font-size: 1.0625rem;
   line-height: 1.8;

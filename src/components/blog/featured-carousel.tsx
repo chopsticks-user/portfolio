@@ -61,7 +61,14 @@ export const FeaturedCarousel = component$<FeaturedCarouselProps>(
               ))}
             </div>
             <div class={styles.meta}>
-              {post.author} · {dateFormatter.format(new Date(post.date))}
+              <a
+                href={post.authorLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {post.author}
+              </a>{" "}
+              · {dateFormatter.format(new Date(post.date))}
             </div>
           </div>
         </div>

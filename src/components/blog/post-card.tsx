@@ -88,7 +88,11 @@ export const PostCard = component$<PostCardProps>(({ post, variant }) => {
       </a>
       <TitleTag class={styles.title}>{post.title}</TitleTag>
       <div class={styles.meta}>
-        by {post.author} · {formattedDate}
+        by{" "}
+        <a href={post.authorLink} target="_blank" rel="noopener noreferrer">
+          {post.author}
+        </a>{" "}
+        · {formattedDate}
       </div>
       {variant === "featured" && <p class={styles.excerpt}>{post.excerpt}</p>}
       <a href={`/blog/${post.slug}`} class={styles.readLink}>

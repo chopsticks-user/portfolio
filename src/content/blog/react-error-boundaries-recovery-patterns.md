@@ -4,6 +4,7 @@ title: "React Error Boundaries and Recovery Patterns"
 excerpt: "Implementing resilient error handling with granular error boundaries, fallback UIs, and automatic retry mechanisms."
 coverGradient: "linear-gradient(135deg, hsl(2, 70%, 15%) 0%, hsl(62, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-10-18"
 tags: ["React"]
 published: true

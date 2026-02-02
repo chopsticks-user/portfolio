@@ -4,6 +4,7 @@ title: "Next.js Image Optimization Strategies"
 excerpt: "Leveraging next/image for responsive images, AVIF/WebP conversion, blur placeholders, and CDN integration."
 coverGradient: "linear-gradient(135deg, hsl(355, 50%, 21%) 0%, hsl(55, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-11-01"
 tags: ["Next.js", "Performance"]
 published: true

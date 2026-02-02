@@ -4,8 +4,9 @@ title: "Linux Memory Management and Virtual Addressing"
 excerpt: "How Linux uses page tables, TLBs, and demand paging to give each process an isolated 48-bit address space."
 coverGradient: "linear-gradient(135deg, hsl(48, 50%, 18%) 0%, hsl(108, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-20"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

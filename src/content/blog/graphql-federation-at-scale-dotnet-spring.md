@@ -4,6 +4,7 @@ title: "GraphQL Federation at Scale with .NET and Spring"
 excerpt: "Running a federated supergraph across .NET and Spring services exposes interesting challenges around schema composition, error propagation, and query planning. Here's what we learned operating one in production."
 coverGradient: "linear-gradient(135deg, #1a0a1a 0%, #3a1a3a 50%, #1a0a1a 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-05"
 tags: ["GraphQL", ".NET", "Spring"]
 published: true

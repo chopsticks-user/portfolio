@@ -4,8 +4,9 @@ title: "Linux Namespaces: Containers from Scratch"
 excerpt: "Understanding how Linux namespaces provide the isolation primitives that make containers possible."
 coverGradient: "linear-gradient(135deg, hsl(207, 70%, 24%) 0%, hsl(267, 40%, 20%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-12-12"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

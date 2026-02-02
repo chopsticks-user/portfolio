@@ -4,6 +4,7 @@ title: "GraphQL Persisted Queries for Performance"
 excerpt: "Eliminating query parsing overhead and reducing payload sizes with persisted query strategies in GraphQL APIs."
 coverGradient: "linear-gradient(135deg, hsl(168, 70%, 15%) 0%, hsl(228, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-06-28"
 tags: ["GraphQL", "Performance"]
 published: true

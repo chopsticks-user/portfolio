@@ -4,6 +4,7 @@ title: "React Server Components Architecture Patterns"
 excerpt: "Structuring applications around the server/client component boundary for optimal bundle size and data flow."
 coverGradient: "linear-gradient(135deg, hsl(94, 50%, 18%) 0%, hsl(154, 48%, 24%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-20"
 tags: ["React", "Next.js"]
 published: true

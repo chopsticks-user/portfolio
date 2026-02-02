@@ -4,8 +4,9 @@ title: "Linux File Descriptor Internals"
 excerpt: "Understanding the three-layer file descriptor architecture: fd table, file description table, and inode table."
 coverGradient: "linear-gradient(135deg, hsl(275, 70%, 21%) 0%, hsl(335, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2026-01-12"
-tags: ["Linux", "System"]
+tags: ["Linux"]
 published: true
 ---
 

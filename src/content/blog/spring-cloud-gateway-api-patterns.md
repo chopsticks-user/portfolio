@@ -4,6 +4,7 @@ title: "Spring Cloud Gateway API Patterns"
 excerpt: "Building API gateways with Spring Cloud Gateway for routing, rate limiting, circuit breaking, and request transformation."
 coverGradient: "linear-gradient(135deg, hsl(9, 60%, 24%) 0%, hsl(69, 56%, 28%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-10"
 tags: ["Spring"]
 published: true

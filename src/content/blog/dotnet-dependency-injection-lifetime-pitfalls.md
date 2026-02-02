@@ -4,6 +4,7 @@ title: ".NET Dependency Injection Lifetime Pitfalls"
 excerpt: "Avoiding captive dependencies, scope validation, and service resolution issues in ASP.NET Core DI."
 coverGradient: "linear-gradient(135deg, hsl(254, 70%, 24%) 0%, hsl(314, 64%, 32%) 100%)"
 author: Frost
+authorLink: "https://github.com/chopsticks-user"
 date: "2025-09-07"
 tags: [".NET"]
 published: true
