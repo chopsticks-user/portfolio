@@ -1,9 +1,11 @@
-import { readFileSync, readdirSync } from "node:fs";
-import { join } from "node:path";
 import matter from "gray-matter";
 import type { BlogPost, BlogPostFull } from "./types";
 
-const CONTENT_DIR = join(process.cwd(), "src", "content", "blog");
+const blogFiles = import.meta.glob("/src/content/blog/*.md", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
 
 async function createProcessor() {
   const { unified } = await import("unified");
@@ -22,11 +24,8 @@ async function createProcessor() {
 }
 
 export function getAllPosts(): BlogPost[] {
-  const files = readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
-
-  return files
-    .map((file) => {
-      const raw = readFileSync(join(CONTENT_DIR, file), "utf-8");
+  return Object.values(blogFiles)
+    .map((raw) => {
       const { data } = matter(raw);
       return data as BlogPostFull;
     })
@@ -57,10 +56,7 @@ export function groupPostsByTag(
 export async function getPostBySlug(
   slug: string,
 ): Promise<BlogPostFull | null> {
-  const files = readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
-
-  for (const file of files) {
-    const raw = readFileSync(join(CONTENT_DIR, file), "utf-8");
+  for (const raw of Object.values(blogFiles)) {
     const { data, content: markdownBody } = matter(raw);
 
     if (data.slug === slug && data.published) {
