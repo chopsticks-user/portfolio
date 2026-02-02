@@ -107,7 +107,7 @@ export const FilterBar = component$<FilterBarProps>(
           </div>
         </div>
 
-        {panelOpen.value && (
+        {(panelOpen.value || activeTags.value.length > 0) && (
           <div class={styles.panel}>
             <div class={styles.searchWrapper}>
               <svg

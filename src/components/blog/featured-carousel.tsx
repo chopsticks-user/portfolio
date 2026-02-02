@@ -45,30 +45,37 @@ export const FeaturedCarousel = component$<FeaturedCarouselProps>(
               <h2 class={styles.title}>{post.title}</h2>
             </a>
             <p class={styles.excerpt}>{post.excerpt}</p>
-            <div class={styles.tags}>
-              {post.tags.map((tag) => (
+            <div class={styles.footer}>
+              <div class={styles.tags}>
+                {post.tags.slice(0, 2).map((tag) => (
+                  <a
+                    key={tag}
+                    href={"/blog?tags=" + encodeURIComponent(tag)}
+                    class={styles.tag}
+                    style={{
+                      color: getTagColor(tag),
+                      borderColor: getTagColor(tag),
+                    }}
+                  >
+                    {tag}
+                  </a>
+                ))}
+                {post.tags.length > 2 && (
+                  <span class={styles.tagOverflow}>
+                    (+{post.tags.length - 2})
+                  </span>
+                )}
+              </div>
+              <div class={styles.meta}>
                 <a
-                  key={tag}
-                  href={"/blog?tags=" + encodeURIComponent(tag)}
-                  class={styles.tag}
-                  style={{
-                    color: getTagColor(tag),
-                    borderColor: getTagColor(tag),
-                  }}
+                  href={post.authorLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  {tag}
-                </a>
-              ))}
-            </div>
-            <div class={styles.meta}>
-              <a
-                href={post.authorLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {post.author}
-              </a>{" "}
-              · {dateFormatter.format(new Date(post.date))}
+                  {post.author}
+                </a>{" "}
+                · {dateFormatter.format(new Date(post.date))}
+              </div>
             </div>
           </div>
         </div>
