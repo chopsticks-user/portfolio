@@ -61,14 +61,18 @@ export default component$(() => {
   const filteredPosts = useComputed$(() => {
     let filtered = posts.value;
 
+    if (activeCategory.value !== "All") {
+      filtered = filtered.filter((p) =>
+        postMatchesCategory(p.tags, activeCategory.value)
+      );
+    }
+
     if (activeTags.value.length > 0) {
       const lower = activeTags.value.map((t) => t.toLowerCase());
       filtered = filtered.filter((p) =>
-        p.tags.some((t) => lower.includes(t.toLowerCase()))
-      );
-    } else if (activeCategory.value !== "All") {
-      filtered = filtered.filter((p) =>
-        postMatchesCategory(p.tags, activeCategory.value)
+        lower.every((selected) =>
+          p.tags.some((t) => t.toLowerCase() === selected)
+        )
       );
     }
 

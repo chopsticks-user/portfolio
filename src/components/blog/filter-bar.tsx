@@ -38,9 +38,7 @@ export const FilterBar = component$<FilterBarProps>(
                 key={cat}
                 class={[
                   styles.tabBtn,
-                  activeTags.value.length === 0 &&
-                    activeCategory.value === cat &&
-                    styles.tabBtnActive,
+                  activeCategory.value === cat && styles.tabBtnActive,
                 ]}
                 onClick$={() => {
                   activeCategory.value = cat;
@@ -109,56 +107,6 @@ export const FilterBar = component$<FilterBarProps>(
           </div>
         </div>
 
-        {activeTags.value.length > 0 && (
-          <div class={styles.selectedTags}>
-            {activeTags.value.map((tag) => {
-              const color = getTagColor(tag);
-              return (
-                <span
-                  key={tag}
-                  class={styles.selectedChip}
-                  style={{ color, borderColor: color }}
-                >
-                  {tag}
-                  <button
-                    class={styles.chipDismiss}
-                    onClick$={() => {
-                      activeTags.value = activeTags.value.filter(
-                        (t) => t !== tag
-                      );
-                      onFilterChange$();
-                    }}
-                    aria-label={`Remove ${tag} filter`}
-                  >
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <line x1="18" y1="6" x2="6" y2="18" />
-                      <line x1="6" y1="6" x2="18" y2="18" />
-                    </svg>
-                  </button>
-                </span>
-              );
-            })}
-            <button
-              class={styles.clearAll}
-              onClick$={() => {
-                activeTags.value = [];
-                onFilterChange$();
-              }}
-            >
-              Clear all
-            </button>
-          </div>
-        )}
-
         {panelOpen.value && (
           <div class={styles.panel}>
             <div class={styles.searchWrapper}>
@@ -218,7 +166,6 @@ export const FilterBar = component$<FilterBarProps>(
                         } else {
                           activeTags.value = [...activeTags.value, tag].sort();
                         }
-                        activeCategory.value = "All";
                         onFilterChange$();
                       }}
                     >
@@ -228,6 +175,55 @@ export const FilterBar = component$<FilterBarProps>(
                 })}
               </div>
             </div>
+            {activeTags.value.length > 0 && (
+              <div class={styles.selectedTags}>
+                {activeTags.value.map((tag) => {
+                  const color = getTagColor(tag);
+                  return (
+                    <span
+                      key={tag}
+                      class={styles.selectedChip}
+                      style={{ color, borderColor: color }}
+                    >
+                      {tag}
+                      <button
+                        class={styles.chipDismiss}
+                        onClick$={() => {
+                          activeTags.value = activeTags.value.filter(
+                            (t) => t !== tag
+                          );
+                          onFilterChange$();
+                        }}
+                        aria-label={`Remove ${tag} filter`}
+                      >
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <line x1="18" y1="6" x2="6" y2="18" />
+                          <line x1="6" y1="6" x2="18" y2="18" />
+                        </svg>
+                      </button>
+                    </span>
+                  );
+                })}
+                <button
+                  class={styles.clearAll}
+                  onClick$={() => {
+                    activeTags.value = [];
+                    onFilterChange$();
+                  }}
+                >
+                  Clear all
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
