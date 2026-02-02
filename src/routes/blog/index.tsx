@@ -1,10 +1,4 @@
-import {
-  $,
-  component$,
-  useComputed$,
-  useSignal,
-  useVisibleTask$,
-} from "@builder.io/qwik";
+import { $, component$, useComputed$, useSignal } from "@builder.io/qwik";
 import {
   type DocumentHead,
   routeLoader$,
@@ -52,10 +46,6 @@ export default component$(() => {
     const qs = sp.toString();
     const newUrl = qs ? `/blog?${qs}` : "/blog";
     history.replaceState(null, "", newUrl);
-  });
-
-  useVisibleTask$(() => {
-    syncUrl();
   });
 
   const filteredPosts = useComputed$(() => {

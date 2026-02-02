@@ -1,18 +1,16 @@
-import { component$, useSignal, useVisibleTask$ } from "@builder.io/qwik";
+import { $, component$, useOnWindow, useSignal } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import styles from "./header.module.css";
 
 export const Header = component$(() => {
   const scrolled = useSignal(false);
 
-  useVisibleTask$(() => {
-    const onScroll = () => {
+  useOnWindow(
+    "scroll",
+    $(() => {
       scrolled.value = window.scrollY > 0;
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  });
+    }),
+  );
 
   return (
     <header class={[styles.header, scrolled.value && styles.scrolled]}>

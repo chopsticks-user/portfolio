@@ -28,6 +28,12 @@ export default component$(() => {
       </head>
       <body lang="en">
         <RouterOutlet />
+        {!isDev && (
+          <>
+            <script defer src="/_vercel/insights/script.js" />
+            <script defer src="/_vercel/speed-insights/script.js" />
+          </>
+        )}
       </body>
     </QwikCityProvider>
   );

@@ -68,6 +68,8 @@ export default tseslint.config(
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "off",
+      "qwik/no-use-visible-task": "error",
+      "qwik/jsx-img": "error",
     },
   }
 );
