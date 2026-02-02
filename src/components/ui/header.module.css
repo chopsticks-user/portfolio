@@ -15,7 +15,7 @@
 }
 
 .inner {
-    width: 80%;
+    width: 70%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -40,13 +40,13 @@
 .navLink {
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     text-decoration: none;
     transition: color 0.15s ease;
 }
 
 .navLink:hover {
-    color: var(--color-text-primary);
+    color: var(--color-accent);
 }
 
 @media (max-width: 1200px) {

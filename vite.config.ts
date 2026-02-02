@@ -9,6 +9,9 @@ import tsconfigPaths from "vite-tsconfig-paths";
 import pkg from "./package.json";
 
 function blogMarkdownPlugin(): Plugin {
+  const VIRTUAL_ID = "virtual:blog-data";
+  const RESOLVED_ID = "\0" + VIRTUAL_ID;
+
   let processor: { process: (content: string) => Promise<{ toString: () => string }> };
 
   async function getProcessor() {
@@ -31,21 +34,31 @@ function blogMarkdownPlugin(): Plugin {
 
   return {
     name: "blog-markdown",
-    enforce: "pre",
+    resolveId(id) {
+      if (id === VIRTUAL_ID) return RESOLVED_ID;
+    },
     async load(id) {
-      if (!id.includes("/content/blog/") || !id.endsWith(".md")) return null;
+      if (id !== RESOLVED_ID) return null;
 
-      const { readFileSync } = await import("node:fs");
-      const raw = readFileSync(id, "utf-8");
+      const { readdirSync, readFileSync } = await import("node:fs");
+      const { join } = await import("node:path");
       const { default: matter } = await import("gray-matter");
-      const { data, content } = matter(raw);
       const proc = await getProcessor();
-      const result = await proc.process(content);
 
-      return [
-        `export const frontmatter = ${JSON.stringify(data)};`,
-        `export const html = ${JSON.stringify(String(result))};`,
-      ].join("\n");
+      const dir = join(process.cwd(), "src", "content", "blog");
+      const files = readdirSync(dir).filter((f: string) => f.endsWith(".md"));
+
+      const entries: string[] = [];
+      for (const file of files) {
+        const raw = readFileSync(join(dir, file), "utf-8");
+        const { data, content } = matter(raw);
+        const result = await proc.process(content);
+        entries.push(
+          `${JSON.stringify(file)}: { frontmatter: ${JSON.stringify(data)}, html: ${JSON.stringify(String(result))} }`,
+        );
+      }
+
+      return `export default {\n${entries.join(",\n")}\n};`;
     },
   };
 }

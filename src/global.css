@@ -1,70 +1,70 @@
 @font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/poppins-400.woff2") format("woff2");
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/poppins-400.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/fonts/poppins-500.woff2") format("woff2");
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/poppins-500.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("/fonts/poppins-700.woff2") format("woff2");
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/poppins-700.woff2") format("woff2");
 }
 
 :where(*, *::before, *::after) {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 :root {
-  --color-bg: #0a0a0f;
-  --color-surface: #12121a;
-  --color-surface-hover: #1a1a26;
-  --color-border: #1e1e2e;
-  --color-text-primary: #e8e8ed;
-  --color-text-secondary: #8888a0;
-  --color-text-muted: #55556a;
-  --color-accent: #3b82f6;
-  --color-accent-hover: #2563eb;
-  --tag-color-qwik: #a78bfa;
-  --tag-color-react: #61dafb;
-  --tag-color-nextjs: #a0a0b0;
-  --tag-color-graphql: #e535ab;
-  --tag-color-dotnet: #818cf8;
-  --tag-color-spring: #6db33f;
-  --tag-color-performance: #f59e0b;
-  --tag-color-linux: #fcc624;
-  --tag-color-cpp: #5c9fd4;
-  --tag-color-typescript: #3178c6;
-  --tag-color-devops: #e8854a;
-  --tag-color-compilers: #2dd4bf;
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+    --color-bg: #0a0a0f;
+    --color-surface: #12121a;
+    --color-surface-hover: #1a1a26;
+    --color-border: #1e1e2e;
+    --color-text-primary: #e8e8ed;
+    --color-text-secondary: #8888a0;
+    --color-text-muted: #55556a;
+    --color-accent: #3b82f6;
+    --color-accent-hover: #2563eb;
+    --tag-color-qwik: #a78bfa;
+    --tag-color-react: #61dafb;
+    --tag-color-nextjs: #a0a0b0;
+    --tag-color-graphql: #e535ab;
+    --tag-color-dotnet: #818cf8;
+    --tag-color-spring: #6db33f;
+    --tag-color-performance: #f59e0b;
+    --tag-color-linux: #fcc624;
+    --tag-color-cpp: #5c9fd4;
+    --tag-color-typescript: #3178c6;
+    --tag-color-devops: #e8854a;
+    --tag-color-compilers: #2dd4bf;
+    --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }
 
 html {
-  line-height: 1;
-  -webkit-text-size-adjust: 100%;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  font-family: var(--font-sans);
+    line-height: 1;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    font-family: var(--font-sans);
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  line-height: inherit;
-  background-color: var(--color-bg);
-  color: var(--color-text-primary);
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
 }

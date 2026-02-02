@@ -1,16 +1,8 @@
+import blogData from "virtual:blog-data";
 import type { BlogPost, BlogPostFull } from "./types";
 
-interface BlogModule {
-  frontmatter: Record<string, unknown>;
-  html: string;
-}
-
-const blogModules = import.meta.glob("/src/content/blog/*.md", {
-  eager: true,
-}) as Record<string, BlogModule>;
-
 export function getAllPosts(): BlogPost[] {
-  return Object.values(blogModules)
+  return Object.values(blogData)
     .map(({ frontmatter }) => frontmatter as unknown as BlogPostFull)
     .filter((post) => post.published)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
@@ -39,10 +31,10 @@ export function groupPostsByTag(
 export async function getPostBySlug(
   slug: string,
 ): Promise<BlogPostFull | null> {
-  for (const { frontmatter, html } of Object.values(blogModules)) {
+  for (const { frontmatter, html } of Object.values(blogData)) {
     if (frontmatter.slug === slug && frontmatter.published) {
       return {
-        ...(frontmatter as Omit<BlogPostFull, "content">),
+        ...(frontmatter as unknown as Omit<BlogPostFull, "content">),
         content: html,
       };
     }

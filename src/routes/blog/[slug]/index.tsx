@@ -23,13 +23,6 @@ export default component$(() => {
 
   return (
     <article class={styles.page}>
-      <img
-        src={`https://picsum.photos/seed/${post.value.slug}/1200/675`}
-        alt=""
-        width={1200}
-        height={675}
-        class={styles.heroImage}
-      />
       <header class={styles.header}>
         <div class={styles.tags}>
           {post.value.tags.map((tag: string) => (
@@ -53,10 +46,16 @@ export default component$(() => {
           >
             {post.value.author}
           </a>{" "}
-          ·{" "}
-          {dateFormatter.format(new Date(post.value.date))}
+          · {dateFormatter.format(new Date(post.value.date))}
         </div>
       </header>
+      <img
+        src={`https://picsum.photos/seed/${post.value.slug}/1200/675`}
+        alt=""
+        width={1200}
+        height={500}
+        class={styles.heroImage}
+      />
       <div
         class={styles.content}
         dangerouslySetInnerHTML={post.value.content}
