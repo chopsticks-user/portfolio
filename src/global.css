@@ -36,6 +36,16 @@
   --color-text-muted: #55556a;
   --color-accent: #3b82f6;
   --color-accent-hover: #2563eb;
+  --tag-color-qwik: #a78bfa;
+  --tag-color-react: #61dafb;
+  --tag-color-nextjs: #a0a0b0;
+  --tag-color-graphql: #e535ab;
+  --tag-color-dotnet: #818cf8;
+  --tag-color-spring: #6db33f;
+  --tag-color-performance: #f59e0b;
+  --tag-color-linux: #fcc624;
+  --tag-color-systems: #f87171;
+  --tag-color-compilers: #2dd4bf;
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }

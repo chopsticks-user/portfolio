@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { type DocumentHead, routeLoader$ } from "@builder.io/qwik-city";
 import { getPostBySlug } from "~/lib/blog";
+import { getTagColor } from "~/lib/tag-colors";
 import styles from "./index.module.css";
 
 export const usePost = routeLoader$(async ({ params, redirect }) => {
@@ -22,12 +23,24 @@ export default component$(() => {
 
   return (
     <article class={styles.page}>
+      <img
+        src={`https://picsum.photos/seed/${post.value.slug}/1200/675`}
+        alt=""
+        width={1200}
+        height={675}
+        class={styles.heroImage}
+      />
       <header class={styles.header}>
         <div class={styles.tags}>
           {post.value.tags.map((tag: string) => (
-            <span key={tag} class={styles.tag}>
+            <a
+              key={tag}
+              href={"/blog?tags=" + encodeURIComponent(tag)}
+              class={styles.tag}
+              style={{ color: getTagColor(tag), borderColor: getTagColor(tag) }}
+            >
               {tag}
-            </span>
+            </a>
           ))}
         </div>
         <h1 class={styles.title}>{post.value.title}</h1>

@@ -5,7 +5,7 @@ excerpt: "You don't need to be a kernel hacker to understand how Linux underpins
 coverGradient: "linear-gradient(135deg, #0f1a0f 0%, #1a3a1a 50%, #0f1a0f 100%)"
 author: Frost
 date: "2026-01-12"
-tags: ["Linux", "Systems"]
+tags: ["Linux", "System"]
 published: true
 ---
 
