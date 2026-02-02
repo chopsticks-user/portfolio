@@ -2,11 +2,53 @@
  * This is the base config for vite.
  * When building, the adapter config is used which loads this file and extends it.
  */
-import { defineConfig, type UserConfig } from "vite";
+import { defineConfig, type Plugin, type UserConfig } from "vite";
 import { qwikVite } from "@builder.io/qwik/optimizer";
 import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import pkg from "./package.json";
+
+function blogMarkdownPlugin(): Plugin {
+  let processor: { process: (content: string) => Promise<{ toString: () => string }> };
+
+  async function getProcessor() {
+    if (!processor) {
+      const { unified } = await import("unified");
+      const remarkParse = (await import("remark-parse")).default;
+      const remarkGfm = (await import("remark-gfm")).default;
+      const remarkRehype = (await import("remark-rehype")).default;
+      const rehypeHighlight = (await import("rehype-highlight")).default;
+      const rehypeStringify = (await import("rehype-stringify")).default;
+      processor = unified()
+        .use(remarkParse)
+        .use(remarkGfm)
+        .use(remarkRehype)
+        .use(rehypeHighlight)
+        .use(rehypeStringify) as typeof processor;
+    }
+    return processor;
+  }
+
+  return {
+    name: "blog-markdown",
+    enforce: "pre",
+    async load(id) {
+      if (!id.includes("/content/blog/") || !id.endsWith(".md")) return null;
+
+      const { readFileSync } = await import("node:fs");
+      const raw = readFileSync(id, "utf-8");
+      const { default: matter } = await import("gray-matter");
+      const { data, content } = matter(raw);
+      const proc = await getProcessor();
+      const result = await proc.process(content);
+
+      return [
+        `export const frontmatter = ${JSON.stringify(data)};`,
+        `export const html = ${JSON.stringify(String(result))};`,
+      ].join("\n");
+    },
+  };
+}
 
 type PkgDep = Record<string, string>;
 const { dependencies = {}, devDependencies = {} } = pkg as any as {
@@ -21,7 +63,12 @@ errorOnDuplicatesPkgDeps(devDependencies, dependencies);
  */
 export default defineConfig(({ command, mode }): UserConfig => {
   return {
-    plugins: [qwikCity(), qwikVite(), tsconfigPaths({ root: "." })],
+    plugins: [
+      blogMarkdownPlugin(),
+      qwikCity(),
+      qwikVite(),
+      tsconfigPaths({ root: "." }),
+    ],
     // This tells Vite which dependencies to pre-build in dev mode.
     optimizeDeps: {
       // Put problematic deps that break bundling here, mostly those with binaries.
