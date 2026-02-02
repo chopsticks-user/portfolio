@@ -1,9 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
-  "name": "qwik-project-name",
-  "short_name": "Welcome to Qwik",
-  "start_url": ".",
+  "name": "frost — developer portfolio",
+  "short_name": "frost",
+  "description": "Developer portfolio, blog, and tools by frost.",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "A Qwik project app."
+  "background_color": "#0a0a0f",
+  "theme_color": "#3b82f6"
 }

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /tools/api/
+
+Sitemap: https://chopsticksuser.com/sitemap.xml
