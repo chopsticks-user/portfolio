@@ -1,22 +1,25 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import matter from "gray-matter";
-import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
-import rehypeHighlight from "rehype-highlight";
-import rehypeStringify from "rehype-stringify";
 import type { BlogPost, BlogPostFull } from "./types";
 
 const CONTENT_DIR = join(process.cwd(), "src", "content", "blog");
 
-const processor = unified()
-  .use(remarkParse)
-  .use(remarkGfm)
-  .use(remarkRehype)
-  .use(rehypeHighlight)
-  .use(rehypeStringify);
+async function createProcessor() {
+  const { unified } = await import("unified");
+  const { default: remarkParse } = await import("remark-parse");
+  const { default: remarkGfm } = await import("remark-gfm");
+  const { default: remarkRehype } = await import("remark-rehype");
+  const { default: rehypeHighlight } = await import("rehype-highlight");
+  const { default: rehypeStringify } = await import("rehype-stringify");
+
+  return unified()
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeHighlight)
+    .use(rehypeStringify);
+}
 
 export function getAllPosts(): BlogPost[] {
   const files = readdirSync(CONTENT_DIR).filter((f) => f.endsWith(".md"));
@@ -61,6 +64,7 @@ export async function getPostBySlug(
     const { data, content: markdownBody } = matter(raw);
 
     if (data.slug === slug && data.published) {
+      const processor = await createProcessor();
       const result = await processor.process(markdownBody);
       return {
         ...(data as Omit<BlogPostFull, "content">),
