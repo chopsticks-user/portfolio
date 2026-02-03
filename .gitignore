@@ -41,3 +41,5 @@ CLAUDE.local.md
 # Yarn
 .yarn/*
 !.yarn/releases
+
+# Vercel

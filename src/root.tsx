@@ -1,7 +1,8 @@
-import { component$ } from "@builder.io/qwik";
-import { isDev } from "@builder.io/qwik";
+import { component$, isDev } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
+import { inject } from "@vercel/analytics";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 import "./global.css";
 import "highlight.js/styles/github-dark-dimmed.css";
@@ -13,6 +14,9 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    */
+
+  inject({ mode: "production" });
+  injectSpeedInsights({});
 
   return (
     <QwikCityProvider>
@@ -28,12 +32,6 @@ export default component$(() => {
       </head>
       <body lang="en">
         <RouterOutlet />
-        {!isDev && (
-          <>
-            <script defer src="/_vercel/insights/script.js" />
-            <script defer src="/_vercel/speed-insights/script.js" />
-          </>
-        )}
       </body>
     </QwikCityProvider>
   );
