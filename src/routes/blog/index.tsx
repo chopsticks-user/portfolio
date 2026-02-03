@@ -4,9 +4,9 @@ import {
   routeLoader$,
   useLocation,
 } from "@builder.io/qwik-city";
-import { FeaturedCarousel } from "~/components/blog/featured-carousel";
-import { FilterBar } from "~/components/blog/filter-bar";
-import { PostCard } from "~/components/blog/post-card";
+import { FeaturedCarousel } from "~/routes/blog/featured-carousel";
+import { FilterBar } from "~/routes/blog/filter-bar";
+import { PostCard } from "~/routes/blog/post-card";
 import { type Category, postMatchesCategory } from "~/lib/categories";
 import { getAllPosts } from "~/lib/blog";
 import styles from "./index.module.css";
