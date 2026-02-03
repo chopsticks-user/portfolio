@@ -1,4 +1,4 @@
-import { component$, isDev } from "@builder.io/qwik";
+import { $, component$, isDev, useOnDocument } from "@builder.io/qwik";
 import { QwikCityProvider, RouterOutlet } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 import { inject } from "@vercel/analytics";
@@ -15,8 +15,13 @@ export default component$(() => {
    * Don't remove the `<head>` and `<body>` elements.
    */
 
-  inject({ mode: "production" });
-  injectSpeedInsights({});
+  useOnDocument(
+    "qinit",
+    $(() => {
+      inject({ mode: "production" });
+      injectSpeedInsights({});
+    }),
+  );
 
   return (
     <QwikCityProvider>
